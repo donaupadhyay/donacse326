@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: right;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+        * {box-sizing: border-box}
+
+                        /* Set height of body and the document to 100% */
+                        body, html {
+                          height: 100%;
+                          margin: 0;
+                          font-family: Arial;
+                        }
+
+                        /* Style tab links */
+                        .tablink {
+                          background-color: #555;
+                          color: black;
+                          float: left;
+                          border: none;
+                          outline: none;
+                          cursor: pointer;
+                          padding: 14px 16px;
+                          font-size: 17px;
+                          width: 25%;
+                        }
+
+                        .tablink:hover {
+                          background-color: #777;
+                        }
+
+                        /* Style the tab content (and add height:100% for full page content) */
+                        .tabcontent {
+                          color: black;
+                          display: none;
+                          padding: 100px 20px;
+                          height: 100%;
+                        }
+
+                        #Home {background-image: url('ff.jpg');
+                                background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;}
+                        #News {background-image: url('ff.jpg');
+                                background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;}
+                        #Contact {background-image: url('ff.jpg');
+                                background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;}
+                        #About {background-image: url('ff.jpg');
+                                background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;}
+                      table, tr, td {
+                        border: 0px solid ;
+                        border-color: rgb(36, 36, 36);
+                        background-color: #f30e0e;
+                      }
+                      
+                      td {
+                          height: 100px;
+                      }
+                      .vr {
+                  width:10px;
+                  background-color:white;
+                  position:absolute;
+                  top:0;
+                  bottom:0;
+                  left:150px;
+              }
+              body {
+              font-family: Arial, Helvetica, sans-serif;
+              background-color: black;
+            }
+
+            * {
+              box-sizing: border-box;
+            }
+
+            
+            .container {
+              padding: 16px;
+              background-image: url(redb.jpg);
+            }
+
+            
+            input[type=text] {
+              width: 100%;
+              padding: 15px;
+              margin: 5px 0 22px 0;
+              display: inline-block;
+              border: none;
+              background: #f1f1f1;
+            }
+
+            input[type=text]:focus, input[type=password]:focus {
+              background-color: #ddd;
+              outline: none;
+            }
+
+           
+            hr {
+              border: 1px solid #f1f1f1;
+              margin-bottom: 25px;
+            }
+
+            
+            .registerbtn {
+              background-color: #4CAF50;
+              color: white;
+              padding: 16px 20px;
+              margin: 8px 0;
+              border: none;
+              cursor: pointer;
+              width: 100%;
+              opacity: 0.9;
+            }
+      </style>
+  </head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <body style="background-image: url(redb.jpg);">
+    <div class="navbar">
+      <a class="active" href="Blood Bank.html"><i class="fa fa-fw fa-home"></i> Home</a>  
+      <a href="Contact_Us.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+      <a href="About_Us.html"><i class="fa fa-cogs"></i> About us</a> 
+      <a href="login_Frame_new.html"><i class="fa fa-fw fa-user"></i> Login</a>
+      <a href="signup.html"><i class="fa fa-fw fa-user"></i> Sign up</a>
+    </div>
+      <table class="bg" style="width: 100%;">
+          <tr>
+              <td colspan="100%" style="background-color:rgb(36, 36, 36);">
+                  <img src="blood_drop-512 .jpg" alt="" height=100 width=100></img>
+                  <img src="BloodBankSiteLogo2018-3.png" alt=""></img>
+              </td>
+          </tr>
+        </table>
+        <table  style="width: 100%;">
+            <tr>
+                <td colspan="100%">
+                    
+                  
+                          <h1 style="text-align: center;size: 600px;color: rgb(252, 196, 15);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contact Us</h1></td>
+                          <td colspan="100%">
+                            <button class="tablink" onclick="openPage('Home', this, 'orange')">North Zone</button>
+
+                            <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">South Zone</button>
+                            <button class="tablink" onclick="openPage('Contact', this, 'chocolate')">East Zone</button>
+                            <button class="tablink" onclick="openPage('About', this, ' yellow')">West Zone</button>
+                            
+                            <div id="Home" class="tabcontent">
+                              <h1>North Zone</h1>
+                              <h3>Chandigarh Union Territory Branch</h3>
+                              <p>STD Code: 0172
+                                2744188
+                                Fax : 2549434</p>
+                              <h3>Delhi Branch </h3>
+                              <p>STD Code: 011
+                                (O) 24618916; 24611756, 24618073</p>
+                              <h3>Haryana State Branch</h3>
+                              <p>STD Code: 0172
+                                (0) 2546328; 2546330</p>
+                              <h3>Himachal Pradesh State Branch</h3>
+                              <p>STD Code: 0177
+                                (O) 2621868</p>
+                              <h3>Jammu & Kashmir State Branch</h3>
+                              <p>Red Cross House, Exchange Road,                  (O)  0194-2473910
+                                Srinagar 190001 (May to October)                  (F)  0194-2473911
+                                
+                                Red Cross Bhawan, Kachi Chawni                    (O)  0191-2520101
+                                Jammu-180001 (November to April)                 (F)  0191-2520103</p>
+                              <h3>Punjab State Branch</h3>
+                              <p>STD Code: 0172
+                                (O) 2784299, 2542180
+                                (R) 2690802</p>
+                              <h3>Uttar Pradesh State Branch</h3>
+                              <p>STD Code: 0522
+                                (O) 2231672
+                                (R) 2614382, 2509882
+                                Fax: 2225159</p>
+                              <h3>Uttarakhand State Branch</h3>
+                              <p>STD Code: 0135
+                                2608956 (O)</p>
+                            </div>
+                            
+                            <div id="News" class="tabcontent">
+                              <h1>South Zone</h1>
+                              <h3>Andhra Pradesh State Branch</h3>
+                              <p>STD Code: 040
+                                Ph. No. 23221749, 23333115</p>
+                              <h3>Andaman & Nicobar State Branch</h3>
+                              <p>Telefax - 03192-228855</p>
+                              <h3>Karnataka State Branch</h3>
+                              <p>STD Code: 080
+                                (O) 22264205, 22268435
+                                Fax: 080-22284878</p>
+                              <h3>Kerala State Branch</h3>
+                              <p>STD Code: 0471
+                                Tele Fax : 0471-2478102
+                                Telephone : 0471-2478106</p>
+                              <h3>Odisha State Branch</h3>
+                              <p>STD Code: 0674
+                                (O) 2392389
+                                Fax : 2402389, 2401242, 2407712, 2400205, 2402757</p>
+                              <h3>Puducherry UT Branch</h3>
+                              <p>STD Code: 0413
+                                (O) 2249350</p>
+                            </div>
+                            
+                            <div id="About" class="tabcontent">
+                              <h1>West Zone</h1>
+                              
+                              <h3>Dadra & Nagar Haveli and Daman & Diu UT Branch</h3>
+                              <p>STD Code: 0260
+                                Tele/Fax: 2255099</p>
+                              <h3>Gujarat State Branch</h3>
+                              <p>STD Code: 079
+                                (O) 27557055, 27557056
+                                Fax: 27551790</p>
+                              <h3>Goa State Branch</h3>
+                              <p>STD Code: 0832
+                                (O) 2224601
+                                Fax: 220189</p>
+                              <h3>Madhya Pradesh State Branch</h3>
+                              <p>STD Code : 0755
+                                (O)0755-2550441, 2552475, 2551657
+                                Fax- 0755 2552475</p>
+                              <h3>Chhattisgarh State Branch</h3>
+                              <p>STD Code: 0771
+                                4037564 (O)
+                                Fax-0771-4091982
+                                </p>
+                              <h3>Rajasthan State Branch</h3>
+                              <p>STD Code: 0141
+                                (O) 2617214, 2608716, 2613815
+                                Fax: 608716, Branches : 20</p>
+                            </div>
+                            
+                            <div id="Contact" class="tabcontent">
+                              <h1>East Zone</h1>
+                              <h3>Bihar State Branch</h3>
+                              <p>STD Code: 0651
+                                2283468(O)
+                                2284633(R)
+                                Fax: 2201101</p>
+                              <h3>Jharkhand State Branch</h3>
+                              <p>STD Code: 033
+                                (O) 22483636, 22315745;
+                                Fax : 22103385</p>
+                              <h3>Sikkim State Branch</h3>
+                              <p>STD Code: 0360
+                                (O) 2245942;
+                                (Fax) 2246156</p>
+                              <h3>West Bengal State Branch</h3>
+                              <p>STD Code: 0361
+                                (O) 2660114</p>
+                              <h3>Arunachal Pradesh State Branch</h3>
+                              <p></p>
+                              <h3>Assam State Branch</h3>
+                              <p>STD Code: 0364
+                                (O) 2223403</p>
+                              <h3>Meghalaya State Branch</h3>
+                              <p>STD Code: 0385
+                                (O) +91 385 2444935</p>
+                              <h3>Manipur State Branch</h3>
+                              <p></p>
+                              <h3>Mizoram State Branch</h3>
+                              <p>Secretary - Principal Director, Health & Family Welfare - Ex Officio Secretary
+                                Indian Red Cross Society
+                                Govt. of Mizoram, Mizoram Secretariate, New Capital Complex
+                                Aizwal - 796001</p>
+                              <h3>Nagaland State Branch</h3>
+                              <p>STD Code: 0370
+                                (O) 2222753, 2244350, 2245862</p>
+                              <h3>Tripura State Branch</h3>
+                              <p>STD Code: 0381
+                                (O) 2303250
+                                (R) 2512544</p>
+
+                            </div>
+                            
+                            <script>
+                            function openPage(pageName,elmnt,color) {
+                              var i, tabcontent, tablinks;
+                              tabcontent = document.getElementsByClassName("tabcontent");
+                              for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                              }
+                              tablinks = document.getElementsByClassName("tablink");
+                              for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].style.backgroundColor = "";
+                              }
+                              document.getElementById(pageName).style.display = "block";
+                              elmnt.style.backgroundColor = color;
+                            }
+                            
+                            // Get the element with id="defaultOpen" and click on it
+                            document.getElementById("defaultOpen").click();
+                            </script>
+                      
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

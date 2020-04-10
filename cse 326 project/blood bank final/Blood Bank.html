@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #000000;
+  overflow: auto;
+}
+
+.navbar a {
+  float: right;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+            a:link, a:visited {
+              background-color: #000000;
+              color: white;
+              padding: 14px 25px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+            }
+            a:hover, a:active {
+              background-color: white;
+            }
+              * {box-sizing: border-box}
+            body {
+              height: 100%;
+              margin: 0;
+              font-family: Arial;
+            }
+
+            /* Style tab links */
+            .tablink {
+              background-color: #555;
+              color: white;
+              float: left;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              padding: 14px 16px;
+              font-size: 17px;
+              width: 25%;
+            }
+
+            .tablink:hover {
+              background-color: #777;
+            }
+
+            /* Style the tab content (and add height:100% for full page content) */
+            .tabcontent {
+              color: white;
+              display: none;
+              padding: 100px 20px;
+              height: 100%;
+            }
+
+            #Home {background-color: whit;}
+            #News 
+                      table, tr, td {
+                        border: 0px solid ;
+                        border-color: rgb(36, 36, 36);
+                        /* background-color: #f30e0e; */
+                      }
+                      
+                      td {
+                          height: 100px;
+                      }
+                      .vr {
+                  width:10px;
+                  background-color:#f8e600;
+                  position:absolute;
+                  top:0;
+                  bottom:0;
+                  left:150px;
+              }
+              body {
+              font-family: Arial, Helvetica, sans-serif;
+              background-color: black;
+            }
+
+            * {
+              box-sizing: border-box;
+            }
+
+            /* Add padding to containers */
+            .container {
+              left: 50%;
+              position: relative;
+              padding: 16px;
+              background-image: url(t4.jpg); background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% ;
+            }
+
+            /* Full-width input fields */
+            input[type=text], input[type=password] {
+              width: 100%;
+              padding: 15px;
+              margin: 5px 0 22px 0;
+              display: inline-block;
+              border: none;
+              background: #f1f1f1;
+            }
+
+            input[type=text]:focus, input[type=password]:focus {
+              background-color: #ddd;
+              outline: none;
+            }
+
+            /* Overwrite default styles of hr */
+            hr {
+              border: 1px solid #f1f1f1;
+              margin-bottom: 25px;
+            }
+
+            /* Set a style for the submit button */
+            .registerbtn {
+              background-color: #4CAF50;
+              color: white;
+              padding: 16px 20px;
+              margin: 8px 0;
+              border: none;
+              cursor: pointer;
+              width: 100%;
+              opacity: 0.9;
+            }
+
+            .registerbtn:hover {
+              opacity: 1;
+            }
+
+            /* Add a blue text color to links */
+            a {
+              color: dodgerblue;
+            }
+
+            /* Set a grey background color and center the text of the "sign in" section */
+            .signin {
+              background-color: #f1f1f1;
+              text-align: center;
+            }
+          </style>
+  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <body style="background-image: url(t4.jpg);">
+      <div class="navbar">
+        <a class="active" href="Blood Bank.html"><i class="fa fa-fw fa-home"></i> Home</a>  
+        <a href="Contact_Us.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+        <a href="About_Us.html"><i class="fa fa-cogs"></i> About us</a> 
+        <a href="login_Frame_new.html"><i class="fa fa-fw fa-user"></i> Login</a>
+        <a href="signup.html"><i class="fa fa-fw fa-user"></i> Sign up</a>
+      </div>
+        <table class="bg" style="width:100%;height:100%;width: 100%;">
+            <tr>
+                <td colspan="100%" >
+                    <img src="blood_drop-512 .jpg" alt="" height=100 width=100></img>
+                    <img src="BloodBankSiteLogo2018-3.png" alt=""></img>
+                </td>
+            </tr>
+        </table>
+        <table  style="width: 50%;">
+            <tr>
+                <td colspan="100%">
+                    <form action="#">
+                        <div class="container">
+                          <h1 style="text-align: center;size: 40px;color: red;">Donor Details Interface</h1>
+                          <button class="tablink" onclick="openPage('Home', this, 'red')">Request Blood</button>
+                            <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">Find a Donar</button>
+
+                                <div id="Home" class="tabcontent">
+                                 <h3>Request Blood</h3>
+                                 <hr>
+                                 <label for="email"><b>Patient name</b></label>
+                                 <input type="text" placeholder="Patient's Name" name="email" required>
+
+                                 <label for="email"><b>Doctor name</b></label>
+                                 <input type="text" placeholder="Doctor's Name" name="email" required>
+                                 
+                                 <label for="email"><b>Blood Group</b></label>
+                                 <input type="text" placeholder="Blood Group" name="email" required>
+            
+                                 <label for="email"><b>State</b></label>
+                                 <input type="text" placeholder="State" name="email" required>
+                             
+                                 <label for="email"><b>City</b></label>
+                                 <input type="text" placeholder="City" name="email" required>
+                             
+                                 <label for="email"><b>Tehsil</b></label>
+                                 <input type="text" placeholder=Tehsil name="email" required>
+                                 <hr>
+                                 <button type="submit" class="registerbtn">Register</button>
+                               </div>
+  
+                                <div id="News" class="tabcontent">
+                                <h3>Find a Donar</h3>
+                    
+                                    <hr>
+                                    <label for="email"><b>Blood  Group</b></label>
+                                    <input type="text" placeholder="Blood Group" name="email" required>
+                                
+                                    <label for="psw"><b>State</b></label>
+                                    <input type="text" placeholder="State" name="psw" required>
+                                
+                                    <label for="psw-repeat"><b>District</b></label>
+                                    <input type="text" placeholder="District" name="psw-repeat" required>
+                                    <hr>
+                                   
+                                
+                                    <button type="submit" class="registerbtn">Register</button>
+                                  </div>
+                                </div>
+
+                                <script>
+                                function openPage(pageName,elmnt,color) {
+                                var i, tabcontent, tablinks;
+                                tabcontent = document.getElementsByClassName("tabcontent");
+                                for (i = 0; i < tabcontent.length; i++) {
+                                    tabcontent[i].style.display = "none";
+                                }
+                                tablinks = document.getElementsByClassName("tablink");
+                                for (i = 0; i < tablinks.length; i++) {
+                                    tablinks[i].style.backgroundColor = "";
+                                }
+                                document.getElementById(pageName).style.display = "block";
+                                elmnt.style.backgroundColor = color;
+                                }
+
+                                // Get the element with id="defaultOpen" and click on it
+                                document.getElementById("defaultOpen").click();
+                                </script>
+                          
+                         
+                      </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

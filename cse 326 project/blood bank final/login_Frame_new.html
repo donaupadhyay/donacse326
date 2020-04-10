@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>
+      login Frame
+    </title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .navbar {
+        width: 100%;
+        background-color: #555;
+        overflow: auto;
+      }
+
+      .navbar a {
+        float: right;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .navbar a:hover {
+        background-color: #000;
+      }
+
+      .active {
+        background-color: #4caf50;
+      }
+
+      @media screen and (max-width: 500px) {
+        .navbar a {
+          float: none;
+          display: block;
+        }
+      }
+
+      body {
+        /* background:rgb(231, 70, 70); */
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        font-family: Arial;
+      }
+      .login {
+        margin: auto;
+        width: 250px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.9);
+        padding: 40px 40px;
+        margin-top: 100px;
+        background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+        background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+      }
+      h1 {
+        color: #fff;
+        text-align: center;
+      }
+      h2 {
+        margin: 0 0 30px 0;
+        padding: 20px;
+        color: #ff267e;
+        text-align: center;
+      }
+      input {
+        width: 50;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .jo,
+      .jo1 {
+        border: none;
+        outline: none;
+        border: 2px #fff dotted;
+        background: transparent;
+        border-radius: 20px;
+        box-sizing: border-box;
+        color: #fff;
+        font-size: 16px;
+        padding: 20px;
+        text-align: center;
+      }
+      ::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+        text-align: center;
+      }
+      input[type="submit"] {
+        border: none;
+        outline: none;
+        padding: 30px;
+        color: #fff;
+        font-size: 16px;
+        font-family: Arial;
+        background: #ff267e;
+        cursor: pointer;
+        border-radius: 20px;
+        text-align: center;
+      }
+      input[type="submit"]:hover {
+        background: #efed40;
+        color: #262626;
+        transition: 0.6s ease;
+      }
+      .loader-wrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #242f3f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .loader {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        border: 4px solid #fff;
+        animation: loader 2s infinite ease;
+      }
+      .loader-inner {
+        vertical-align: top;
+        display: inline-block;
+        width: 100%;
+        background-color: #fff;
+        animation: loader-inner 2s infinite ease-in;
+      }
+      #background_video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -100;
+      }
+    </style>
+  </head>
+  <body>
+    
+      <div style="z-index: 99;">
+
+    <div class="navbar">
+          
+       
+        <a href="login_Frame_new.html"><i class="fa fa-fw fa-user"></i> Login</a>
+        <a href="signup.html"><i class="fa fa-fw fa-user"></i> Sign up</a>
+      </div>
+<h1>
+Blood Bank Welcomes You!!!
+</h1>
+<div class="login">
+<h1>
+Welcome to Blood Bank
+</h1>
+<hr>
+<h2>
+Log In
+</h2>
+<form action="Blood Bank.html" method="get">
+<center>
+<input type="text" name="username" placeholder="Enter Username" class='jo' required>
+<input type="password" name="password" placeholder="Enter paasword" class='jo1' required>
+<input type="submit" name="login" value="Login">
+<input type="submit" name="login" value="Sign Up" formaction="signup.html">
+</center>
+</form>
+</div>
+<marquee>
+<h3>
+<font color=#fff>
+Blood Bank
+</h3>
+</font>
+</marquee>
+</div>
+<video autoplay muted loop id="background_video">
+  <source src="blood_cells_stock.mp4" type="video/mp4" />
+</video>
+<script>
+    $(window).on("load",function(){
+     $(".loader-wrapper").fadeOut("slow");
+    });
+</script>
+  </body>
+</html>
